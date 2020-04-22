@@ -16,6 +16,12 @@ header, .pageHeader {
   color: white;
 }
 
+.imgInt, .homeImg {
+  height: 40vmin;
+  margin: 5px;
+  padding: 40px;
+}
+
 .pageHeader {
   height: 150px;
   margin-bottom: 25px;
@@ -31,9 +37,7 @@ header {
   }
 }
 .homeImg {
-  height: 40vmin;
   pointer-events: none;
-  margin: 45px;
 }
 
 @keyframes App-logo-spin {
@@ -44,22 +48,14 @@ header {
     transform: rotate(360deg);
   }
 }
-.ugrid {
-  background-color: green;
-  display: grid;
-  padding: 20px;
-  margin: 5px;
-  grid-column-gap: 20px;
-  grid-row-gap: 10px;
-  grid-template-columns: auto auto auto;
-  /* meaning first and second column 200px and last one auto */
+#favourite {
+  text-align: left;
+  color: springgreen;
 }
 
-.ugrid-item {
-  background-color: white;
-  font-size: 20px;
-  text-align: center;
-  padding: 20px;
+#favourite2 {
+  text-align: left;
+  color: mediumblue;
 }
 
 /*# sourceMappingURL=style.css.map */

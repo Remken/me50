@@ -15,6 +15,11 @@ body{
     flex-direction: column;    
     color: white;      
 }
+%imgVar{
+  height: 40vmin;
+  margin: 5px;
+  padding: 40px;
+}
 .pageHeader{
     @extend %headerVar; 
     height: 150px;
@@ -30,11 +35,12 @@ header{
   }
 }
 .homeImg{
-  height: 40vmin;
+  @extend %imgVar;
   pointer-events: none;
-  margin: 45px;
 }
-
+.imgInt {
+  @extend %imgVar;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -43,18 +49,11 @@ header{
     transform: rotate(360deg);
   }
 }
-.ugrid{
-  background-color: green;
-  display: grid;
-  padding: 20px;
-  margin: 5px;
-  grid-column-gap: 20px;
-  grid-row-gap: 10px;
-  grid-template-columns: auto auto auto; /* meaning first and second column 200px and last one auto */
+#favourite{
+  text-align: left;
+  color: springgreen;
 }
-.ugrid-item{
-  background-color: white;
-  font-size: 20px;
-  text-align: center;
-  padding: 20px;
+#favourite2{
+  text-align: left;
+  color: mediumblue;
 }
