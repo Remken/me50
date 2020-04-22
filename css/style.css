@@ -1,0 +1,65 @@
+body {
+  background-color: white;
+}
+body ::selection {
+  background-color: yellow;
+  color: red;
+}
+
+header, .pageHeader {
+  background-color: #282c34;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.pageHeader {
+  height: 150px;
+  margin-bottom: 25px;
+}
+
+header {
+  min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .homeImg {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.homeImg {
+  height: 40vmin;
+  pointer-events: none;
+  margin: 45px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ugrid {
+  background-color: green;
+  display: grid;
+  padding: 20px;
+  margin: 5px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  /* meaning first and second column 200px and last one auto */
+}
+
+.ugrid-item {
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
